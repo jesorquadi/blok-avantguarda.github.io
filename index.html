@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BLOK</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Alegreya:500,400i,500i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Barlow:800" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style_grid.css">
+	<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	a{
+		text-decoration: none;
+		color:blue;
+	}
+	@font-face {
+    font-family: 'fell';
+    src: url('fonts/fell.otf');
+	}
+
+	@keyframes rotacio{
+			from{
+				filter: sepia(100%) hue-rotate(1deg) saturate(400%) contrast(160%) brightness(100%) invert(1);
+				
+}
+			to{
+				filter: sepia(100%) hue-rotate(142deg) saturate(400%) contrast(160%) brightness(100%) invert(1);
+			}
+		}
+
+
+
+
+
+	header{
+		position: relative;
+		text-align:center;
+		}
+	.blok{
+		margin-top:9vw;
+		font-family: 'Old Standard TT', serif;		
+		font-size:20vw;
+		color:red;
+		letter-spacing:-0.1em;
+		font-weight: 700;
+		}
+
+	/*header{
+		position: relative;
+		width:98vw;
+		font-family: 'Old Standard TT', serif;
+		font-weight: 700;
+		text-align: center;
+		font-size:20vw;
+		color:red;
+		letter-spacing:-0.1em;
+	}*/
+	/*.blok{
+		width:40vw;
+		font-family: 'Old Standard TT', serif;
+		font-weight: 700;
+		text-align: center;
+		font-size:20vw;
+		color:red;
+		letter-spacing:-0.1em;*/
+	
+	.cursor{
+		top:25%;
+		width:100%;
+		left:0;
+		position:absolute;		
+		color:blue;
+		font-family: 'Barlow Condensed', sans-serif;
+		font-size:6vw;
+		text-align: center;
+		letter-spacing: 4vw;
+		z-index: 2;
+		mix-blend-mode:darken;
+		}
+	.especial{
+		width: 100%;
+		position: absolute;
+		text-align:center;
+		left:0;
+		font-family: 'Alegreya';
+		font-size: 2vw;
+		font-style: italic;
+		mix-blend-mode:darken;
+		color:blue;
+		z-index: 2;
+		margin-top: 13%;
+		}
+	nav{
+			width: 98%;
+			text-transform: uppercase;
+			font-family: 'Barlow', sans-serif;
+			position:absolute;
+			margin-top: -6%;
+			color:red;
+			font-size:3vw;
+			text-align: center;
+			word-spacing: 9vw;
+
+		}
+		main{
+			margin-left:20%;
+		}
+
+		.vars{
+			font-family: 'Barlow', sans-serif;
+			font-weight: 700;
+			direction: rtl; 
+			color: red;
+			writing-mode: vertical-lr;
+			font-size: 1.6vw;
+			margin-bottom: 4vh;
+			float:left;
+		}
+
+		#linies{
+			position: absolute;
+			width: 14vw;
+			fill:red;
+			margin-left: 6vw;
+		}
+
+		#mosaic{
+			position: absolute;
+			font-size:2.5vw;
+			font-family: 'fell';
+			color:red;
+			line-height: 1.2;
+			margin-top: 4vh;
+			margin-left: 20vw;
+		}
+		img{
+			position: absolute;
+			width:16vw;
+			margin-left: 28vw;
+			animation-name:rotacio;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			animation-delay: 1s;
+			animation-direction: alternate;
+			
+			filter:sepia(100%) hue-rotate(4deg) saturate(400%) contrast(160%) brightness(100%) invert(1);
+			margin-top: 0vh;
+			mix-blend-mode: multiply;
+		}
+		#lletrab{
+			position: absolute;
+			font-family:'Barlow Condensed', sans-serif;
+			color:blue;
+			margin-top: 10vw;
+			margin-left: 16vw;
+			font-size: 16vw; 
+			mix-blend-mode: darken;
+		}
+
+		#filet{
+			position: absolute;
+			height:600px;
+			margin-top: 16vw;
+			margin-left: 47vw;
+			width:0.2vw;
+			background: red;
+			border:0;
+			z-index: 0;
+		}
+		#original{
+			height:60px;
+			position: absolute;
+			margin-top: 480px;
+			margin-left:36vw;
+			font-size:1.6vw;
+			z-index: 1;
+			background: white;
+			line-height: 40px;
+			transition: transform .2s;	
+		}
+			#original:hover {
+  			transform: scale(1.2);
+ 		 	}
+ 		 #numero{
+ 		 	position: absolute;	
+ 		 	font-family:'Alegreya', serif;
+ 		 	color:red;
+ 		 	font-size: 8vw;
+ 			margin-top: 510px;
+ 			margin-left: 10vw;
+ 		 }
+
+
+
+
+		
+
+/*CODI FONTS
+		font-family: 'Playfair Display', serif;
+	
+		font-family: 'Alegreya', serif
+		font-family: 'Barlow', sans-serif;
+		font-family: 'Barlow Condensed', sans-serif;
+		im_fell_flowers_1regular
+	}
+	*/
+	/*CSS RESPONSIVE 
+	@media screen and (max-width:600px){
+		body{
+			background:red;
+		}
+	}*/
+
+
+
+	</style>
+</head>
+<body>
+	 <header>
+	 	<span class="blok">BLOK</span>
+	 	<span class="cursor">BLOC CURSOR</span>
+	 	<span class="especial">Especial d'estiu</span>
+	 	<nav>Revista Internacional d'Avantguarda</nav>	 	
+	 </header>
+	 <main>
+	 	<span class="vars push-1">Varsowie-Pologne Wspolna 20 </span>
+	 	
+	 	<div id="centre">
+	 		<svg id="linies" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 229 322"><title>linies</title><rect width="10" height="322"/><rect x="11" width="218" height="4"/></svg>
+	 		<div id="mosaic">
+	 			<p>PPPPPP<br>PPPPPP<br>PPPPPP<br>PPPPPP<br>PPPPPP<br>PPPPPP</p>
+	 		</div>	 		
+ 			<img src="images/vaixell.jpg">
+ 			<p id="lletrab">B</p>
+	 	</div>
+	 	<hr id="filet">
+	 	<p id="original"><a href="https://monoskop.org/Avant-garde_and_modernist_magazines#mediaviewer/File:Blok_6-7_1924.jpg">Blok 6-7 editada per Blok Warsaw</a><p>
+	 	<p id="numero">nº 6-7</p>
+	 </main>
+
+	 
+
+</body>
+</html>
